@@ -27,17 +27,17 @@ bool premium_cheat_work = false;
 final TextEditingController _keyController = TextEditingController();
 
 final Stream<QuerySnapshot> PricePremiumCheat =
-    FirebaseFirestore.instance.collection("PricePremiumCheat").snapshots();
+    FirebaseFirestore.instance.collection("...").snapshots();
 
 class _PremiumPageState extends State<PremiumPage> {
   PremiumCheatWorkActive() async {
     final prefs = await SharedPreferences.getInstance();
-    premium_cheat_work = prefs.getBool("PremiumKey")!;
+    premium_cheat_work = prefs.getBool("...")!;
   }
 
   PremiumCheatSet() async {
     final prefs = await SharedPreferences.getInstance();
-    premium_cheat_work = await prefs.setBool("PremiumKey", true);
+    premium_cheat_work = await prefs.setBool("...", true);
   }
 
   @override
@@ -46,8 +46,8 @@ class _PremiumPageState extends State<PremiumPage> {
       if (activate_now == true) {
         return FutureBuilder(
           future: FirebaseFirestore.instance
-              .collection("KeyPremiumCheat")
-              .doc("slx5xmhNbTwzVkmrQFw2")
+              .collection("...")
+              .doc("...")
               .get(),
           builder:
               (BuildContext context, AsyncSnapshot<DocumentSnapshot> snapshot) {
