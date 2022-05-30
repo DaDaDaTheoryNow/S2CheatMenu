@@ -275,7 +275,7 @@ class _PremiumPageState extends State<PremiumPage> {
                 keyboardType: TextInputType.number,
                 textAlign: TextAlign.center,
                 toolbarOptions:
-                    ToolbarOptions(paste: true, selectAll: true, cut: false),
+                    ToolbarOptions(paste: false, selectAll: true, cut: false),
                 decoration: InputDecoration(
                   hintText: "Write your key, please!",
                   border: InputBorder.none,
