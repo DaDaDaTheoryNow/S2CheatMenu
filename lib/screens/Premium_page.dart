@@ -402,17 +402,6 @@ class _PremiumPageState extends State<PremiumPage> {
                           );
                         }
 
-                        if (snapshot.connectionState == ConnectionState.none) {
-                          return Text(
-                            "No internet connection",
-                            style: TextStyle(
-                              color: Color.fromARGB(255, 255, 17, 0),
-                              fontSize: 30,
-                              fontFamily: "Blaka",
-                            ),
-                          );
-                        }
-
                         final data = snapshot.requireData;
 
                         //return Text("price is ${data.docs[0]["price"]} now");
